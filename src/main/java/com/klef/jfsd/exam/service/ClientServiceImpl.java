@@ -16,8 +16,8 @@ public class ClientServiceImpl implements ClientService
 	@Override
 	public List<Object> getcomments() 
 	{
-		Object[] posts = restTemplate.getForObject("https://jsonplaceholder.typicode.com/comments", Object[].class);
-	    return Arrays.asList(posts);
+		Object[] comments = restTemplate.getForObject("https://jsonplaceholder.typicode.com/comments", Object[].class);
+	    return Arrays.asList(comments);
 	}
 	
 }
